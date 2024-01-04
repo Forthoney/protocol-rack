@@ -17,8 +17,8 @@ module Protocol
 				IMPLEMENTATION = Rack2
 			end
 			
-			def self.new(app)
-				IMPLEMENTATION.wrap(app)
+			def self.new(app, console)
+				IMPLEMENTATION.wrap(app, console)
 			end
 			
 			def self.make_response(env, response)
